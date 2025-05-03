@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Technical Documentation - DEMO <i>by Saumy (FreeCodeCamp)</i></header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+    <a class="nav-link" href="#HTML">HTML</a>
+    <a class="nav-link" href="#CSS">CSS</a>
+    <a class="nav-link" href="#Media_Query">Media Query</a>
+  </nav>
+
+   <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+             <p> JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+       JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+       <ul> <li> Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+       <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server. </li>
+    </ul>
+    </p>
+      <code>console.log("Hello, world!");</code>
+      <code>int main() { return 0; }</code>
+      <code>int main() { return 0; }</code>
+      <code>int main() { return 0; }</code>
+      <code>int main() { return 0; }</code>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>JavaScript and Java</header>
+      <p>Java is a widely used, high-level, object-oriented programming language developed by Sun Microsystems (acquired by Oracle Corporation) in the mid-1990s. It was designed with the principle of "Write Once, Run Anywhere" (WORA), meaning that Java code can be written once and executed on any platform that has a Java Virtual Machine (JVM). This feature has contributed to Java's popularity in a variety of domains, including web development, enterprise applications, mobile apps, and more.
+        <br>
+        <br>
+        JavaScript is a high-level, interpreted programming language initially developed by Brendan Eich at Netscape in 1995. Unlike Java, JavaScript's primary use case is within web development, where it is the backbone of interactive and dynamic elements on websites. It is widely supported by web browsers, allowing developers to create engaging user interfaces and responsive web applications.
+      </p>
+    </section>
+
+    <section class="main-section" id="HTML">
+      <header>HTML</header>
+      <p>HTML is a markup language used to create the structure and content of web pages. It uses tags to define elements and their relationships on a web page.</p>
+      <p>HTML consists of various tags that enclose content to create elements. Elements represent the building blocks of a web page, such as headings, paragraphs, images, links, lists, and more.</p>
+      <p>An HTML document typically starts with a !DOCTYPE declaration, followed by the <html> element, which contains the <head> and <body> elements. The <head> contains metadata, while the <body> holds the visible content.</p>
+      <p> HTML offers six levels of headings (h1 to h6) to define the hierarchy and structure of content.</p>
+      <p>Paragraphs are defined using the p element and are used to group text into separate blocks.
+
+</p>
+      <p> Hyperlinks are created using the a element. Users can click on links to navigate to other web pages or resources.</p>
+      <p>Images are inserted with the img element, specifying the image source (src) and alternative text (alt).</p>
+      <p>HTML supports ordered lists (ol) and unordered lists (ul) using list item elements <li>.</p>
+      <p> Tables are created using the table element, with rows defined by tr and cells by <td> or <th> for table data and headings, respectively.</p>
+      <p> HTML provides form elements like form, input, select, textarea, etc., to collect user input and send it to a server for processing.</p>
+    
+    </section>
+
+    <section class="main-section" id="CSS">
+      <header>CSS</header>
+      <p>CSS is a style sheet language used to control the presentation and layout of HTML documents. It allows developers to define how HTML elements should be displayed on a web page, including their colors, fonts, sizes, positioning, and other visual aspects. CSS works by selecting HTML elements and applying styles to them based on rules defined in the CSS file. </p>
+   
+    </section>
+
+    <section class="main-section" id="Media_Query">
+      <header>Media Query</header>
+      <p>A media query is a feature in CSS (Cascading Style Sheets) that allows developers to apply different styles to a web page based on various criteria, such as the user's device type, screen size, resolution, orientation, and more. Media queries enable responsive web design, where the layout and presentation of a website automatically adapt to different devices, providing an optimal viewing experience for users across desktops, tablets, and smartphones.</p>
+     
+    </section>
+  </main>
+
+  <script>
+    // Smooth scrolling for nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        const navbarHeight = document.getElementById('navbar').offsetHeight;
+        const scrollOffset = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+        window.scroll({
+          top: scrollOffset,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

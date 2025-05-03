@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="em"
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+  <body>
+    <header>
+    <h1 id="title" class="text-center">Lifeline Bloodbank Form</h1>
+    <h3 id="title" class="text-center">By Saumy (FreeCodeCamp)</h3>
+    <p id="description" class="description text-center">A single drop of blood can make a huge difference  </p>
+    </header>
+<form id="survey-form">
+  <div class="survey-form">
+    <label id="name-label" for="name">Name</label>  
+    <input id="name" type="text" class="form-control" name="name" placeholder="Eenter Your Name"required /></div>
+<div id="form-group">
+  <label id="email-label" for="email" >Email</label>
+  <input id="email" type="email" class="form-control" name="email" placeholder="Enter Your Email" required /></div>
+  <div id="form-group">
+    <label id="number-label" for="number" >Number</label>
+    <input id="number" type="number" class="form-control" name="number " placeholder=" Number" min="5" max="10" /><div>
+      <div id="form-group">
+        <p>Your Blood Group</p>
+        <select id="dropdown" name="blood" class="form-control" required >
+          <option disabled selected value> Select Your Group<option>
+          <option value="A+">A+</option>
+          <option value="B+">B+</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          </select>
+          </div>
+      <div id="survey-form">
+        <p>Have You Donated Previously</p>
+        <label>
+          <input name="user-recommend" value="Yes" type="radio" class="input-radio"  />Yes<label>
+            <label>
+              <input 
+              name="user-recommend" value="No" type="radio" class="input-radio" />No</label>
+              
+      <div id="survey-form">
+        <p>Do you suffer from or have suffered from any of the following Diseases?</p>
+        <label>
+          <input name="prefer" value="Heart Diseas" class="input-checkbox" type="checkbox">Heart Diseas</label>
+          <label>
+            <input name="prefer" value="Lung Disease" type="checkbox" class="input-checkbox">Lung Disease</label>
+            <label>
+              <input name="prefer" value="Kidney Disease" type="checkbox" class="input-checkbox">Kidney Disease</label>
+              <label>
+                <input name="prefer" value="Cancer/ Malignant Disease" type="checkbox" class="input-checkbox">Cancer/ Malignant Disease</label>
+                <label>
+                  <input name="prefer" value=" Diabetes" type="checkbox" class="input-checkbox"> Diabetes</label>
+                  <label>
+                    <input name="prefer" value="Tuberculosis" type="checkbox" class="input-checkbox">Tuberculosis</label>
+                    <label>
+                      <input name="prefer" value="Malaria" type="checkbox" class="input-checkbox">Malaria</label>
+                      </div>
+                      <div class="survey-form">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="survey-form">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  </html>
